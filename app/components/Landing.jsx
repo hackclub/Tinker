@@ -8,7 +8,7 @@ const Landing = () => {
 				{/* main section */}
 				<div className="flex flex-col items-center justify-center w-fit pt-[15vh] ml-[6vw] bg-red-400/0">
 					<h1 className="wim text-[25vh] leading-[22.5vh] text-white">
-						Blinker
+						Tinker
 					</h1>
 					{/* buttons */}
 					<div className="flex flex-col items-end justify-center w-full gap-[1vh]">

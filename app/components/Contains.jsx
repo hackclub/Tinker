@@ -50,7 +50,7 @@ const Contains = () => {
 				alt="transition image"
 			/>
 			<h1 className="text-white text-[20vh] wim absolute bottom-[20vh] left-[5vw]">
-				Blinker
+				Tinker
 			</h1>
 			{/* Footer */}
 			<img src="/imgs/footer.png" className="w-full" alt="footer background" />
