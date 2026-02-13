@@ -8,8 +8,8 @@ export default function Home() {
 		<div className="min-h-screen w-full">
 			<Navbar />
 			<Landing />
-			<Pictures />
-			<Contains />
+			{/* 	<Pictures /> */}
+			{/* <Contains /> */}
 		</div>
 	);
 }
