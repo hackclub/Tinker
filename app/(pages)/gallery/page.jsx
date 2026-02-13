@@ -1,4 +1,5 @@
 "use client";
+import Navbar from "@/app/components/Navbar";
 import React from "react";
 
 const example_projects = [
@@ -55,12 +56,13 @@ const example_projects = [
 export default function Gallery() {
 	return (
 		<section className="min-h-screen w-full bg-cover bg-center relative">
+			<Navbar />
 			<img
 				src="/imgs/bg.png"
 				className="w-full h-screen object-cover z-[-1] fixed top-0 left-0"
 				alt=""
 			/>
-			<div className="min-h-screen w-full flex flex-col items-center py-[3vh] px-[5vw] gap-[0vh]">
+			<div className="min-h-screen w-full flex flex-col items-center py-[3vh] pt-[8vh] px-[5vw] gap-[0vh]">
 				<h1 className="wim text-[17.5vh] text-white mb-[0vh]">Gallery</h1>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2vw] w-[90vw]">
