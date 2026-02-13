@@ -61,12 +61,12 @@ const Landing = () => {
 				<div className="flex flex-col items-center justify-center w-fit pt-[15vh] ml-[6vw]">
 					<div className="mr-auto relative pr-[0.5vw] pb-[1vh] group cursor-pointer w-[15vw] mb-[2vh]">
 						{/* back */}
-						<span className="absolute inset-0 bg-black z-0 w-[97%] h-[97%] ml-[0.75vw] mt-[0.5vh] transition-all ease-in-out group-hover:mt-[0] group-hover:translate-y-[0.35vh]"></span>
+						<span className="absolute inset-0 bg-black z-0 w-[96.5%] h-[97%] ml-[0.75vw] mt-[0.5vh] transition-all ease-in-out group-hover:mt-[0] group-hover:translate-y-[0.35vh]"></span>
 
 						{/* logo face */}
 						<img
 							src="/imgs/SSCS-logo.png"
-							className="relative z-10 w-full bg-white p-[2vh] transition-all ease-in-out group-hover:translate-x-[0.5vw] group-hover:translate-y-[0.5vh]"
+							className="relative z-10 w-full bg-white p-[2vh] transition-all ease-in-out group-hover:translate-x-[0.5vw] group-hover:translate-y-[0.25vh]"
 							alt="SSCS Logo"
 						/>
 					</div>

@@ -1,23 +1,20 @@
 const Navbar = () => {
 	return (
 		<div className="fixed top-[0.75vh] left-0 z-99 w-full pointer-events-auto flex gap-[1.25vw] items-center justify-center">
-			<div className="bg-[#1c2d4d] h-[7.5vh] w-[30vw] relative flex items-center justify-start">
-				<div className="bg-[#000000] h-[7.5vh] w-[30vw] absolute top-[1.1vh] left-[0.6vw] z-[-1]"></div>
-				<a href="https://hackclub.com/">
+			<div className="bg-[#1c2d4d] h-[7.5vh] w-[27.5vw] relative flex items-center justify-start">
+				<div className="bg-[#000000] h-[7.5vh] w-[27.5vw] absolute top-[1.1vh] left-[0.6vw] z-[-1]"></div>
+				<a href="https://hackclub.com/" className="mr-[1.5vw]">
 					<img
 						src="/imgs/hack-club.png"
 						className="w-[6.5vw]"
 						alt="hack club logo"
 					/>
 				</a>
-				<a href="/" className="text-white text-[3vh] pl-[1vw] wim">
-					Some Link
+				<a href="/gallery" className="text-white text-[3vh] ml-[1vw] wim">
+					Gallery
 				</a>
-				<a href="/" className="text-white text-[3vh] pl-[2vw] wim">
-					Some Link
-				</a>
-				<a href="/" className="text-white text-[3vh] pl-[2vw] wim">
-					Some Link
+				<a href="/docs" className="text-white text-[3vh] ml-[2.5vw] wim">
+					Documentation
 				</a>
 			</div>
 
