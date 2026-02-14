@@ -82,7 +82,9 @@ export default function Gallery() {
 									className="w-full h-[20vh] object-cover bg-gray-300"
 								/>
 								<div className="py-[0.5vh] pb-[1vh] px-[1vw] flex flex-col gap-[0.25vh]">
-									<h2 className="text-[3vh] font-bold">{proj.name}</h2>
+									<h2 className="text-[3vh] font-bold tracking-[2px] wim">
+										{proj.name}
+									</h2>
 									<p className="text-[2vh] font-light">{proj.description}</p>
 									<p className="text-[1.75vh] italic mt-[1vh]">
 										Created by: {proj.creator}
