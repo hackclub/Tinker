@@ -55,7 +55,12 @@ const Landing = () => {
 			  Math.min(pcbProgress - 1, 1) * (END_TOP_VH - START_TOP_VH);
 
 	return (
-		<>
+		<div style={{ backgroundImage: "url('/imgs/bg-dots.png')" }}>
+			<img
+				src="/imgs/transition1.png"
+				className="w-full h-[80vh] object-cover absolute top-[30vh] z-0"
+				alt=""
+			/>
 			{/* landing */}
 			<section className="h-[110vh] relative">
 				<div className="flex flex-col items-center justify-center w-fit pt-[15vh] ml-[6vw]">
@@ -105,12 +110,6 @@ const Landing = () => {
 						alt=""
 					/>
 				</div>
-
-				<img
-					src="/imgs/bg.png"
-					className="w-full h-[130vh] object-cover absolute top-[-20vh] -z-10"
-					alt=""
-				/>
 			</section>
 
 			{/* how it works */}
@@ -140,7 +139,7 @@ const Landing = () => {
 			</section>
 
 			{/* Pictures */}
-			<section className=" bg-[#1e2f23] pb-[17.5vh] pt-[5vh] md:pt-[13vh] relative">
+			<section className=" bg-[#1e2f23] pb-[5vh] pt-[5vh] md:pt-[13vh] relative">
 				<div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center gap-x-[3vw] md:gap-x-[2vh] md:gap-[2vh] h-[40vh] min-w-fit group relative px-[5vw]">
 					<img
 						src="/imgs/workshop1.png"
@@ -163,7 +162,7 @@ const Landing = () => {
 						alt="picture of a workshop"
 					/>
 				</div>
-				<h3 className="wim text-[8vh] md:text-[10vh] text-white leading-[8vh] md:leading-[10vh] ml-auto absolute bottom-0 left-[5vw]">
+				<h3 className="wim text-[8vh] md:text-[10vh] text-white leading-[8vh] md:leading-[10vh] ml-auto absolute bottom-[-10vh] z-80 left-[5vw]">
 					Workshop Pictures
 				</h3>
 			</section>
@@ -212,26 +211,24 @@ const Landing = () => {
 						</div>
 					))}
 				</div>
+			</section>
+
+			<section className="min-h-[70vh] relative">
 				{/* transition image */}
 				<img
 					src="/imgs/transition2.png"
 					className="w-full"
 					alt="transition image"
 				/>
-				<h1 className="text-white text-[10vh] md:text-[20vh] wim absolute bottom-[20vh] left-[5vw]">
+				<h1 className="text-white text-[10vh] md:text-[20vh] wim absolute bottom-[12.5vh] left-[5vw]">
 					Tinker
 				</h1>
 				{/* Footer */}
-				<img
-					src="/imgs/footer.png"
-					className="w-full"
-					alt="footer background"
-				/>
-				<div className="absolute bottom-[0.35vh] tracking-[0.1vh] left-[50%] translate-x-[-50%] wim text-white text-[1.75vh] w-full text-center md:text-[3.5vh]">
+				<div className="absolute bottom-[0vh] bg-black/20 py-[1.5vh] tracking-[0.1vh] left-[50%] translate-x-[-50%] wim text-white text-[1.75vh] w-full text-center md:text-[3.5vh]">
 					Made with love by Hack Clubbers
 				</div>
 			</section>
-		</>
+		</div>
 	);
 };
 

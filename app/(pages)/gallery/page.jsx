@@ -90,12 +90,15 @@ export default function Gallery() {
 	const [activeProject, setActiveProject] = useState(null);
 
 	return (
-		<section className="min-h-screen w-full relative">
-			<img
-				src="/imgs/bg.png"
+		<section
+			className="min-h-screen w-full relative"
+			style={{ backgroundImage: "url('/imgs/bg-dots.png')" }}
+		>
+			{/* <img
+				src="/imgs/bg-dots.png"
 				className="w-full h-screen object-cover z-[-1] fixed top-0 left-0"
 				alt=""
-			/>
+			/> */}
 
 			<Navbar />
 

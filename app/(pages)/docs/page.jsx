@@ -34,12 +34,15 @@ const Docs = () => {
 	}, [activeDoc]);
 
 	return (
-		<section className="min-h-screen w-full relative">
-			<img
-				src="/imgs/bg.png"
+		<section
+			className="min-h-screen w-full relative"
+			style={{ backgroundImage: "url('/imgs/bg-dots.png')" }}
+		>
+			{/* <img
+				src="/imgs/bg-dots.png"
 				className="w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
 				alt=""
-			/>
+			/> */}
 
 			<Navbar />
 
@@ -67,7 +70,7 @@ const Docs = () => {
 
 				{/* Content */}
 				<div className="flex-1 bg-white p-[4vh] ml-[21vw] mb-[4vh]">
-					<h1 className="wim text-[6vh] tracking-[0.2vw] mb-[2vh]">
+					<h1 className="wim text-[8vh] leading-[8vh] tracking-[0.2vw] mb-[1vh]">
 						{docsContent[activeDoc].title}
 					</h1>
 
