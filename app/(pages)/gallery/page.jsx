@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "@/app/components/Navbar";
 import React from "react";
 
 const example_projects = [
@@ -56,7 +55,7 @@ const example_projects = [
 export default function Gallery() {
 	return (
 		<section className="min-h-screen w-full bg-cover bg-center relative">
-			<Navbar />
+			{/* 	<Navbar /> */}
 			<img
 				src="/imgs/bg.png"
 				className="w-full h-screen object-cover z-[-1] fixed top-0 left-0"

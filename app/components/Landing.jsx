@@ -61,12 +61,12 @@ const Landing = () => {
 				<div className="flex flex-col items-center justify-center w-fit pt-[15vh] ml-[6vw]">
 					<div className="mr-auto relative pr-[0.5vw] pb-[1vh] group cursor-pointer w-[15vw] mb-[2vh]">
 						{/* back */}
-						<span className="absolute inset-0 bg-black z-0 w-[96.5%] h-[97%] ml-[0.75vw] mt-[0.5vh] transition-all ease-in-out group-hover:mt-[0] group-hover:translate-y-[0.35vh]"></span>
+						<span className="absolute inset-0 bg-black z-0 w-[96.5%] h-[96%] ml-[0.7vw] mt-[0.5vh] transition-all ease-in-out group-hover:mt-[0.2vh] group-hover:translate-y-[0.35vh]"></span>
 
 						{/* logo face */}
 						<img
 							src="/imgs/SSCS-logo.png"
-							className="relative z-10 w-full bg-white p-[2vh] transition-all ease-in-out group-hover:translate-x-[0.5vw] group-hover:translate-y-[0.25vh]"
+							className="relative z-10 w-full bg-white p-[2vh] transition-all ease-in-out group-hover:translate-x-[0.4vw] group-hover:translate-y-[0.6vh]"
 							alt="SSCS Logo"
 						/>
 					</div>
@@ -115,55 +115,55 @@ const Landing = () => {
 
 			{/* how it works */}
 			<section className="min-h-[80vh] bg-[#1e2f23] mt-[-2vh] w-full relative pt-[5vh]">
-				<h2 className="wim text-[20vh] text-white w-fit leading-[20vh] mx-auto ml-[5vw] relative">
+				<h2 className="wim text-[10vh] md:text-[20vh] text-white w-fit leading-[10vh] md:leading-[20vh] mx-auto ml-[5vw] relative">
 					How it works?
 				</h2>
 
-				<div className="flex flex-col items-end justify-between mr-[12.5vw] h-[60vh] relative">
-					<div className="flex flex-col h-[60vh] w-[5vw] absolute top-0 right-[-7.5vw] items-center justify-between py-[5vh]">
+				<div className="flex flex-col items-end justify-between mr-[12.5vw] h-[40vh] md:h-[60vh] relative">
+					<div className="flex flex-col h-[40vh] md:h-[60vh] w-[5vw] absolute top-0 right-[-7.5vw] items-center justify-between py-[5vh]">
 						<div className="h-full w-[0.5vw] bg-white absolute top-0 left-[50%] translate-x-[-50%]" />
-						<div className="w-[2.5vw] h-[2.5vw] bg-white border-[0.45vh] border-black z-10" />
-						<div className="w-[2.5vw] h-[2.5vw] bg-white border-[0.45vh] border-black z-10" />
-						<div className="w-[2.5vw] h-[2.5vw] bg-white border-[0.45vh] border-black z-10" />
+						<div className="w-[4vw] h-[4vw] md:w-[2.5vw] md:h-[2.5vw] bg-white border-[0.45vh] border-black z-10" />
+						<div className="w-[4vw] h-[4vw] md:w-[2.5vw] md:h-[2.5vw] bg-white border-[0.45vh] border-black z-10" />
+						<div className="w-[4vw] h-[4vw] md:w-[2.5vw] md:h-[2.5vw] bg-white border-[0.45vh] border-black z-10" />
 					</div>
 
-					<h1 className="wim text-[12.5vh] text-white leading-[15vh] ml-auto">
+					<h1 className="wim text-[5vh] pl-[10vw] md:pl-0 md:text-[12.5vh] text-white leading-[6vh] md:leading-[15vh] ml-auto">
 						Apply
 					</h1>
-					<h1 className="wim text-[12.5vh] text-white leading-[15vh] ml-auto">
+					<h1 className="wim text-[5vh] pl-[10vw] md:pl-0 md:text-[12.5vh] text-white leading-[6vh] md:leading-[15vh] ml-auto">
 						Run a workshop
 					</h1>
-					<h1 className="wim text-[12.5vh] text-white leading-[15vh] ml-auto">
+					<h1 className="wim text-[5vh] pl-[10vw] md:pl-0 md:text-[12.5vh] text-white leading-[6vh] md:leading-[15vh] ml-auto">
 						get free Blinky kits and PCB&apos;s
 					</h1>
 				</div>
 			</section>
 
 			{/* Pictures */}
-			<section className=" bg-[#1e2f23] pb-[17.5vh] pt-[13vh] relative">
-				<div className="flex items-center justify-center gap-[2vh] h-[40vh] min-w-fit group relative">
+			<section className=" bg-[#1e2f23] pb-[17.5vh] pt-[5vh] md:pt-[13vh] relative">
+				<div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center gap-x-[3vw] md:gap-x-[2vh] md:gap-[2vh] h-[40vh] min-w-fit group relative px-[5vw]">
 					<img
 						src="/imgs/workshop1.png"
-						className="w-[22.5vw] transition-all duration-[0.25s] ease-in-out p-[1vh] bg-white shadow-2xl shadow-black/70 rotate-8 group-hover:rotate-0"
+						className="w-full md:w-[22.5vw] transition-all duration-[0.25s] ease-in-out p-[1vh] bg-white shadow-2xl shadow-black/70 rotate-8 group-hover:rotate-0"
 						alt="picture of a workshop"
 					/>
 					<img
 						src="/imgs/workshop2.png"
-						className="w-[22.5vw] transition-all duration-[0.25s] ease-in-out p-[1vh] bg-white shadow-2xl shadow-black/70 rotate-[-5deg] group-hover:rotate-0"
+						className="w-full md:w-[22.5vw] transition-all duration-[0.25s] ease-in-out p-[1vh] bg-white shadow-2xl shadow-black/70 rotate-[-5deg] group-hover:rotate-0"
 						alt="picture of a workshop"
 					/>
 					<img
 						src="/imgs/workshop3.png"
-						className="w-[22.5vw] transition-all duration-[0.25s] ease-in-out p-[1vh] bg-white shadow-2xl shadow-black/70 rotate-12 group-hover:rotate-0"
+						className="w-full md:w-[22.5vw] transition-all duration-[0.25s] ease-in-out p-[1vh] bg-white shadow-2xl shadow-black/70 rotate-12 group-hover:rotate-0"
 						alt="picture of a workshop"
 					/>
 					<img
 						src="/imgs/workshop4.png"
-						className="w-[22.5vw] transition-all duration-[0.25s] ease-in-out p-[1vh] bg-white shadow-2xl shadow-black/70 rotate-[-5deg] group-hover:rotate-0"
+						className="w-full md:w-[22.5vw] transition-all duration-[0.25s] ease-in-out p-[1vh] bg-white shadow-2xl shadow-black/70 rotate-[-5deg] group-hover:rotate-0"
 						alt="picture of a workshop"
 					/>
 				</div>
-				<h3 className="wim text-[10vh] text-white leading-[10vh] ml-auto absolute bottom-0 left-[5vw]">
+				<h3 className="wim text-[8vh] md:text-[10vh] text-white leading-[8vh] md:leading-[10vh] ml-auto absolute bottom-0 left-[5vw]">
 					Workshop Pictures
 				</h3>
 			</section>
@@ -177,10 +177,10 @@ const Landing = () => {
 					className="w-[105vw] left-[-5vw]"
 				/>
 				{/* title */}
-				<h2 className="wim text-[20vh] text-white w-fit leading-[20vh] mx-auto ml-[5vw] relative">
+				<h2 className="wim text-[10vh] md:text-[20vh] text-white w-fit leading-[10vh] md:leading-[18vh] mx-auto ml-[5vw] relative">
 					Blinky Kit Contains
 				</h2>
-				<div className="grid grid-cols-3 w-[90vw] mx-auto gap-y-[2vh] gap-x-[2vw] mt-[2vh] pb-[8vh]">
+				<div className="grid grid-cols-2 md:grid-cols-3 w-[90vw] mx-auto gap-y-[2vh] gap-x-[2vw] mt-[2vh] pb-[8vh]">
 					{[
 						"10x Blue LED's",
 						"10x Green LED's",
@@ -218,7 +218,7 @@ const Landing = () => {
 					className="w-full"
 					alt="transition image"
 				/>
-				<h1 className="text-white text-[20vh] wim absolute bottom-[20vh] left-[5vw]">
+				<h1 className="text-white text-[10vh] md:text-[20vh] wim absolute bottom-[20vh] left-[5vw]">
 					Tinker
 				</h1>
 				{/* Footer */}
@@ -227,7 +227,7 @@ const Landing = () => {
 					className="w-full"
 					alt="footer background"
 				/>
-				<div className="absolute bottom-[0.35vh] tracking-[0.1vh] left-[50%] translate-x-[-50%] wim text-white text-[3.5vh]">
+				<div className="absolute bottom-[0.35vh] tracking-[0.1vh] left-[50%] translate-x-[-50%] wim text-white text-[1.75vh] w-full text-center md:text-[3.5vh]">
 					Made with love by Hack Clubbers
 				</div>
 			</section>
