@@ -86,9 +86,28 @@ const Landing = () => {
 
 					<h1 className="wim text-[16vh] md:text-[28vh] leading-[14vh] md:leading-[25vh] text-white">Tinker</h1>
 
-					<div className="flex flex-col items-end justify-center w-full gap-[1vh]">
-						<Button text="Run a Blinky workshop for your Club" />
-						<Button text="Join a blinky workshop" />
+					<div className="flex flex-col items-start justify-center w-full gap-[1.5vh] mt-[1vh]">
+						{/* Join workshop - prominent, unified box */}
+						<div className="relative pr-[1.5vw] md:pr-[0.6vw] pb-[1.1vh]">
+							<span className="absolute inset-0 bg-black z-0 w-[98%] h-[92%] mt-auto ml-auto"></span>
+							<div className="relative z-10 bg-white flex flex-row items-stretch">
+								<span className="text-[3vh] md:text-[5.5vh] wim px-[4vw] md:px-[2vw] py-[0.75vh] md:py-[0.25vh] whitespace-nowrap flex items-center">
+									Join a Blinky Workshop
+								</span>
+								<div className="w-[0.3vh] bg-black/20 shrink-0 self-stretch"></div>
+								<input
+									type="text"
+									maxLength={4}
+									placeholder="ABCD"
+									className="text-[3vh] md:text-[5.5vh] wim w-[18vw] md:w-[8vw] text-center uppercase tracking-[0.5vw] outline-none bg-transparent py-[0.75vh] md:py-[0.25vh]"
+								/>
+								<button className="bg-black text-white text-[2vh] md:text-[3.5vh] wim px-[3vw] md:px-[1.5vw] cursor-pointer hover:bg-black/80 transition-colors whitespace-nowrap flex items-center">
+									Go!
+								</button>
+							</div>
+						</div>
+						{/* Run workshop - small */}
+						<Button text="Run a Blinky Workshop for your Club" size="small" />
 					</div>
 				</div>
 

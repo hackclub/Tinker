@@ -1,0 +1,419 @@
+/*
+ * Tinker — Fillout Custom CSS Theme
+ *
+ * Brutalist style matching the Tinker website.
+ *
+ * HOW TO USE:
+ * 1. In Fillout > Settings > Custom Code, add:
+ *
+ *    <style>
+ *      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+ *      @font-face {
+ *        font-family: "wim";
+ *        src: url("https://tinker.hackclub.com/fonts/wim/wim.ttf") format("truetype");
+ *      }
+ *    </style>
+ *
+ * 2. In Fillout > Theme > Advanced designer > Add CSS, paste this file.
+ * 3. In the Theme visual editor, set:
+ *      - Background color: #1e2f23
+ *      - Primary/accent color: #20633B
+ *      - Text color: #ffffff
+ *      - Button color: #ffffff
+ *      - Corner radius: 0
+ *
+ * Works on any Fillout form. Requires Pro plan for custom CSS.
+ */
+
+
+/* ═══════════════════════════════════════════════════════════
+   PAGE BACKGROUND
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-live-mode,
+.fillout-edit-mode {
+  background-color: #1e2f23 !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   KILL ALL BORDER RADIUS
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-live-mode *,
+.fillout-edit-mode * {
+  border-radius: 0 !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   FORCE ALL TEXT WHITE
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-live-mode,
+.fillout-live-mode *,
+.fillout-edit-mode,
+.fillout-edit-mode * {
+  color: #ffffff !important;
+}
+
+/* Re-set dark text inside white-background elements */
+.fillout-field-container input,
+.fillout-field-container textarea,
+.fillout-field-container select {
+  color: #000000 !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   TYPOGRAPHY — HEADINGS
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-text h1,
+.fillout-field-text h2,
+.fillout-field-text h3,
+.fillout-field-text h4,
+.fillout-field-text p,
+.fillout-field-text span {
+  font-family: "wim", "Inter", sans-serif !important;
+  color: #ffffff !important;
+  letter-spacing: 0.02em !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   TYPOGRAPHY — PARAGRAPHS & DESCRIPTIONS
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-paragraph h1,
+.fillout-field-paragraph h2,
+.fillout-field-paragraph p,
+.fillout-field-paragraph span,
+.fillout-field-paragraph a {
+  font-family: "Inter", sans-serif !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+}
+
+.fillout-field-paragraph a {
+  color: #7dd3a0 !important;
+  text-decoration: underline !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   TYPOGRAPHY — LABELS & CAPTIONS
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-label,
+.fillout-field-label span,
+.fillout-field-container label {
+  font-family: "Inter", sans-serif !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+}
+
+.fillout-caption,
+.fillout-caption span,
+.fillout-caption * {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.fillout-required-asterisk {
+  color: #ff6b6b !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   INPUT FIELDS — TEXT, EMAIL, PHONE, URL, NUMBER
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-container input[type="text"],
+.fillout-field-container input[type="email"],
+.fillout-field-container input[type="tel"],
+.fillout-field-container input[type="url"],
+.fillout-field-container input[type="number"],
+.fillout-field-container input[type="password"],
+.fillout-field-short-answer input,
+.fillout-field-long-answer textarea,
+.fillout-field-email input,
+.fillout-field-phone input,
+.fillout-field-url input,
+.fillout-field-number input {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1rem !important;
+  padding: 0.75rem 1.25rem !important;
+  letter-spacing: 0.03em !important;
+  outline: none !important;
+  box-shadow: 5px 5px 0px #000000 !important;
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out !important;
+}
+
+.fillout-field-container textarea {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1rem !important;
+  padding: 0.75rem 1.25rem !important;
+  outline: none !important;
+  box-shadow: 5px 5px 0px #000000 !important;
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out !important;
+}
+
+.fillout-field-container input:focus,
+.fillout-field-container textarea:focus {
+  box-shadow: 3px 3px 0px #000000 !important;
+  transform: translate(2px, 2px) !important;
+}
+
+.fillout-field-container input::placeholder,
+.fillout-field-container textarea::placeholder {
+  color: #aaaaaa !important;
+  letter-spacing: 0.05em !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   DROPDOWN / SELECT
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-container select,
+.fillout-field-dropdown select,
+.fillout-field-dropdown > div[class*="control"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: 5px 5px 0px #000000 !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   DATE PICKER
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-date input,
+.fillout-field-date div[class*="input"],
+.fillout-field-date div[class*="control"],
+.fillout-field-date div[class*="picker"],
+.fillout-field-container input[type="date"],
+.fillout-field-container input[placeholder*="MM"],
+.fillout-field-container input[placeholder*="DD"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1rem !important;
+  padding: 0.75rem 1.25rem !important;
+  box-shadow: 5px 5px 0px #000000 !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   NEXT / SUBMIT BUTTON
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-button,
+.fillout-field-button button,
+.fillout-field-container button[type="submit"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: "wim", "Inter", sans-serif !important;
+  font-size: 1.25rem !important;
+  padding: 0.6rem 2rem !important;
+  cursor: pointer !important;
+  box-shadow: 6px 6px 0px #000000 !important;
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out !important;
+}
+
+.fillout-field-button:hover,
+.fillout-field-button button:hover {
+  box-shadow: 3px 3px 0px #000000 !important;
+  transform: translate(3px, 3px) !important;
+}
+
+.fillout-field-button:active,
+.fillout-field-button button:active {
+  box-shadow: 1px 1px 0px #000000 !important;
+  transform: translate(5px, 5px) !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   BACK BUTTON
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-back-button {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 3px solid #ffffff !important;
+  border-radius: 0 !important;
+  font-family: "wim", "Inter", sans-serif !important;
+  font-size: 1rem !important;
+  padding: 0.5rem 1.5rem !important;
+  box-shadow: 4px 4px 0px #000000 !important;
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out !important;
+}
+
+.fillout-back-button:hover {
+  box-shadow: 2px 2px 0px #000000 !important;
+  transform: translate(2px, 2px) !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   SKIP BUTTON
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-skip-button {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-family: "Inter", sans-serif !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.fillout-skip-button:hover {
+  color: #ffffff !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   MULTIPLE CHOICE / RADIO / CHECKBOXES
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-multiple-choice label,
+.fillout-field-checkboxes label,
+.fillout-field-multiple-choice div[role="option"],
+.fillout-field-multiple-choice div[role="radio"],
+.fillout-field-multiple-choice div[role="checkbox"],
+.fillout-field-checkboxes div[role="option"],
+.fillout-field-checkboxes div[role="checkbox"] {
+  background-color: #f5f5f5 !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1.5rem !important;
+  box-shadow: 4px 4px 0px #000000 !important;
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out,
+    background-color 0.15s ease-in-out !important;
+  letter-spacing: 0.03em !important;
+  cursor: pointer !important;
+}
+
+.fillout-field-multiple-choice label:hover,
+.fillout-field-checkboxes label:hover,
+.fillout-field-multiple-choice div[role="option"]:hover,
+.fillout-field-multiple-choice div[role="radio"]:hover {
+  box-shadow: 2px 2px 0px #000000 !important;
+  transform: translate(2px, 2px) !important;
+}
+
+.fillout-field-multiple-choice label[aria-selected="true"],
+.fillout-field-multiple-choice label[aria-checked="true"],
+.fillout-field-checkboxes label[aria-selected="true"],
+.fillout-field-checkboxes label[aria-checked="true"],
+.fillout-field-multiple-choice div[aria-selected="true"],
+.fillout-field-multiple-choice div[aria-checked="true"],
+.fillout-field-checkboxes div[aria-selected="true"],
+.fillout-field-checkboxes div[aria-checked="true"] {
+  background-color: #20633B !important;
+  color: #ffffff !important;
+  box-shadow: 3px 3px 0px #000000 !important;
+  transform: translate(1px, 1px) !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   FILE UPLOAD / DROPZONE
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-file-upload > div {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 3px dashed rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 !important;
+  color: #ffffff !important;
+}
+
+.fillout-field-file-upload > div:hover {
+  border-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   VALIDATION ERRORS
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-error-validation-message {
+  color: #ff6b6b !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   THEME LOGO
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-theme-logo {
+  border-radius: 0 !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   LOGIN PROFILE ICON
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-login-profile {
+  color: #ffffff !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   LINKS
+   ═══════════════════════════════════════════════════════════ */
+
+.fillout-field-container a {
+  color: #7dd3a0 !important;
+}
+
+.fillout-field-container a:hover {
+  color: #ffffff !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE — MOBILE
+   ═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .fillout-field-button,
+  .fillout-field-button button {
+    font-size: 1rem !important;
+    padding: 0.5rem 1.5rem !important;
+    box-shadow: 4px 4px 0px #000000 !important;
+  }
+
+  .fillout-field-container input,
+  .fillout-field-container textarea,
+  .fillout-field-container select {
+    box-shadow: 3px 3px 0px #000000 !important;
+    font-size: 0.9rem !important;
+  }
+}
