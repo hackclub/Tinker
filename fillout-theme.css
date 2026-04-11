@@ -224,7 +224,14 @@
    NEXT / SUBMIT BUTTON
    ═══════════════════════════════════════════════════════════ */
 
-.fillout-field-button,
+/* Wrapper — transparent, no shadow */
+.fillout-field-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Actual button inside */
 .fillout-field-button button,
 .fillout-field-container button[type="submit"] {
   background-color: #ffffff !important;
@@ -239,14 +246,14 @@
   transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out !important;
 }
 
-.fillout-field-button:hover,
-.fillout-field-button button:hover {
+.fillout-field-button button:hover,
+.fillout-field-container button[type="submit"]:hover {
   box-shadow: 3px 3px 0px #000000 !important;
   transform: translate(3px, 3px) !important;
 }
 
-.fillout-field-button:active,
-.fillout-field-button button:active {
+.fillout-field-button button:active,
+.fillout-field-container button[type="submit"]:active {
   box-shadow: 1px 1px 0px #000000 !important;
   transform: translate(5px, 5px) !important;
 }
@@ -295,12 +302,19 @@
    ═══════════════════════════════════════════════════════════ */
 
 .fillout-field-multiple-choice label,
+.fillout-field-multiple-choice label *,
 .fillout-field-checkboxes label,
+.fillout-field-checkboxes label *,
 .fillout-field-multiple-choice div[role="option"],
+.fillout-field-multiple-choice div[role="option"] *,
 .fillout-field-multiple-choice div[role="radio"],
+.fillout-field-multiple-choice div[role="radio"] *,
 .fillout-field-multiple-choice div[role="checkbox"],
+.fillout-field-multiple-choice div[role="checkbox"] *,
 .fillout-field-checkboxes div[role="option"],
-.fillout-field-checkboxes div[role="checkbox"] {
+.fillout-field-checkboxes div[role="option"] *,
+.fillout-field-checkboxes div[role="checkbox"],
+.fillout-field-checkboxes div[role="checkbox"] * {
   background-color: #f5f5f5 !important;
   color: #000000 !important;
   border: none !important;
@@ -324,13 +338,21 @@
 }
 
 .fillout-field-multiple-choice label[aria-selected="true"],
+.fillout-field-multiple-choice label[aria-selected="true"] *,
 .fillout-field-multiple-choice label[aria-checked="true"],
+.fillout-field-multiple-choice label[aria-checked="true"] *,
 .fillout-field-checkboxes label[aria-selected="true"],
+.fillout-field-checkboxes label[aria-selected="true"] *,
 .fillout-field-checkboxes label[aria-checked="true"],
+.fillout-field-checkboxes label[aria-checked="true"] *,
 .fillout-field-multiple-choice div[aria-selected="true"],
+.fillout-field-multiple-choice div[aria-selected="true"] *,
 .fillout-field-multiple-choice div[aria-checked="true"],
+.fillout-field-multiple-choice div[aria-checked="true"] *,
 .fillout-field-checkboxes div[aria-selected="true"],
-.fillout-field-checkboxes div[aria-checked="true"] {
+.fillout-field-checkboxes div[aria-selected="true"] *,
+.fillout-field-checkboxes div[aria-checked="true"],
+.fillout-field-checkboxes div[aria-checked="true"] * {
   background-color: #20633B !important;
   color: #ffffff !important;
   box-shadow: 3px 3px 0px #000000 !important;
@@ -403,7 +425,6 @@
    ═══════════════════════════════════════════════════════════ */
 
 @media (max-width: 768px) {
-  .fillout-field-button,
   .fillout-field-button button {
     font-size: 1rem !important;
     padding: 0.5rem 1.5rem !important;
