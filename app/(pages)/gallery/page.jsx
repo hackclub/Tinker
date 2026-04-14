@@ -99,16 +99,16 @@ export default function Gallery() {
 			<div className="min-h-screen w-full flex flex-col items-center py-[3vh] pt-[10vh] md:pt-[8vh] px-[4vw] md:px-[5vw]">
 				<h1 className="wim text-[10vh] md:text-[17.5vh] text-white">Gallery</h1>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[4vw] md:gap-[2vw] w-full md:w-[90vw]">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[4vw] md:gap-[2vw] w-full md:w-[90vw]">
 					{example_projects.map((proj, idx) => (
 						<div
 							key={idx}
 							onClick={() => setActiveProject(proj)}
 							className="relative group cursor-pointer pr-[2vw] md:pr-[0.6vw] pb-[1.1vh]"
 						>
-							<span className="absolute inset-0 bg-black z-0 w-[97%] h-[96%] mt-auto ml-auto transition-all group-hover:translate-x-[0.2vw] group-hover:translate-y-[0.15vh]"></span>
+							<span className="absolute inset-0 bg-black z-0 translate-x-[0.6vw] translate-y-[0.75vh] transition-all group-hover:translate-x-[0.3vw] group-hover:translate-y-[0.4vh]"></span>
 
-							<div className="relative z-10 bg-white overflow-hidden transition-all group-hover:translate-x-[0.6vw] group-hover:translate-y-[0.75vh]">
+							<div className="relative z-10 bg-white overflow-hidden transition-all group-hover:translate-x-[0.4vw] group-hover:translate-y-[0.5vh]">
 								<img
 									src={proj.image}
 									alt={proj.name}
@@ -146,6 +146,10 @@ export default function Gallery() {
 							</div>
 						</div>
 					))}
+				</div>
+				{/* Footer */}
+				<div className="mt-[5vh] py-[1.5vh] tracking-[0.1vh] wim text-white text-[1.75vh] w-full text-center md:text-[3.5vh]">
+					Made by Clay and Jane
 				</div>
 			</div>
 

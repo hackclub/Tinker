@@ -263,7 +263,7 @@ const Landing = () => {
 				</h1>
 				{/* Footer */}
 				<div className="absolute bottom-[0vh] bg-black/20 py-[1.5vh] tracking-[0.1vh] left-[50%] translate-x-[-50%] wim text-white text-[1.75vh] w-full text-center md:text-[3.5vh]">
-					Made with love by Hack Clubbers
+					Made by Clay and Jane
 				</div>
 			</section>
 		</div>
